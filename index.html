@@ -11,7 +11,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     :root{
       --white: hsl(0, 0%, 100%);
@@ -41,7 +40,7 @@
       width: 300px;
       padding: 16px;
       border-radius: 20px;
-      box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1);
+      box-shadow: 0 4px 6px -1px rgba(0, 0,0,0.1);
       
     }
     .card-el{
@@ -49,8 +48,9 @@
       margin: 0 auto;
       margin-bottom: 12px;
     }
-    img{
+    .img img{
       border-radius: 10px;
+      width: 100%;
     }
     
     .heading h1{
@@ -58,8 +58,7 @@
       color: var(--slate-900);
       text-align: center;
       font-weight:700;
-      padding-left: 5px;
-      padding-right: 5px;
+      padding:0 5px;
     }
     .desc p{
       text-align: center;
@@ -73,19 +72,20 @@
 </head>
 <body>
   <div class="card-body">
- <div class="card">
-  <div class="img card-el">
-<img src="./images/image-qr-code.png" alt="Qr Code" width="268">
+    <div class="card">
+      <div class="img card-el">
+        <img src="./images/image-qr-code.png" alt="QR code to visit Frontend Mentor website" width="268">
+      </div>
+      <div class="heading card-el"> 
+        <h1>Improve your front-end skills by building projects</h1>
+      </div>
+      <div class="desc card-el">
+        <p>Scan the QR code to visit Frontend
+        Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="heading card-el"> 
-    <h1>Improve your front-end skills by building projects</h1>
-  </div>
-  <div class="desc card-el">
-    <p>Scan the QR code to visit Frontend
-    Mentor and take your coding skills to the next level</p>
-  </div>
-  </div>
- </div>
 </div>
 </body>
 </html>
